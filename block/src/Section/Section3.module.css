@@ -1,0 +1,71 @@
+@keyframes movintop {
+  0% {
+    transform: translateY(60px) scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0.7) translateY(40px);
+    opacity: 1;
+  }
+}
+@keyframes movintop1 {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.section {
+  height: 600px;
+  margin-top: -88px;
+}
+.head {
+  font-size: 40px;
+  font-weight: 600;
+  color: #3d4270;
+  animation-name: movintop1;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #65677e;
+  width: 90%;
+  text-align: left;
+  margin: 36px auto 10px;
+  animation-name: movintop1;
+  animation-duration: 500ms;
+  animation-delay: 200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left1 img {
+  width: 600px;
+  margin-top: 80px;
+  transform: scale(0.7) translateY(40px);
+  animation-name: movintop;
+  animation-duration: 500ms;
+  animation-delay: 200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.right1 {
+  width: 50%;
+}

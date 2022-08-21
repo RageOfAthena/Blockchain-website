@@ -1,0 +1,122 @@
+@keyframes movintop {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movinleft {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movinright {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.section {
+  background-image: linear-gradient(
+    #365ae1 0%,
+    #244ae2 4.66%,
+    #1029a6 76.69%,
+    #1029a6 100%
+  );
+  width: 100%;
+  height: 124.7vh;
+  position: relative;
+  z-index: 1;
+}
+.shape1 {
+  position: absolute;
+  top: -344px;
+  left: -124px;
+  width: 970px;
+  height: 540px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 73px;
+  z-index: -1;
+  transform: rotate(-26deg);
+}
+.shape2 {
+  position: absolute;
+  bottom: -33px;
+  left: -205px;
+  width: 970px;
+  height: 540px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 73px;
+  z-index: -1;
+  transform: rotate(-26deg);
+}
+.shape3 {
+  position: absolute;
+  top: -393px;
+  left: 540px;
+  width: 970px;
+  height: 540px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 73px;
+  z-index: -1;
+  transform: rotate(-26deg);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.imgimg {
+  width: 492px;
+  height: 398px;
+  animation-name: movinright;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.text {
+  width: 650px;
+}
+.texth1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  animation-name: movintop;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.textp {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  text-align: left;
+  animation-name: movinleft;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
